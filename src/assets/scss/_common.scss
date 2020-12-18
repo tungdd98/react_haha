@@ -1,0 +1,53 @@
+$fontSizes: (10, 12, 14, 17, 18);
+@each $size in $fontSizes {
+  .font-#{$size} {
+    font-size: #{$size}px;
+  }
+}
+$fontWeights: (300, 400, 500, 600, 700);
+@each $weight in $fontWeights {
+  .font-weight-#{$weight} {
+    font-weight: #{$weight};
+  }
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+input,
+button,
+select,
+table,
+input::placeholder {
+  font-family: inherit !important;
+}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.absolute-fluid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.flex-column {
+  flex-direction: column;
+}

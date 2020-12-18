@@ -1,0 +1,14 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  font-size: $font-size-base;
+}
+.error {
+  color: $danger;
+  font-style: italic;
+  font-size: 10px;
+}
